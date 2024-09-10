@@ -14,6 +14,11 @@ const UserSchema = new schema({
     password : {
         type: String,
         required : true
+    },
+    role :{
+        type : String,
+        enum : ["passenger" , "driver" , "admin"],
+        default : "passenger"
     }
 }, {timestamps : true});
 
