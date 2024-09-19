@@ -7,7 +7,7 @@ connectDB();
 
 //IMPORT ROUTE
 const userRouter = require("./routes/userRoute");
-const { verifyToken } = require('./utils/helper');
+const {verifyToken} = require('./middleware/jwt.js');
 
 
 //BODY-PARSER
